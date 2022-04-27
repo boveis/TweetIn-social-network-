@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SignUnPageController">
+   <children>
+      <TextField fx:id="username" layoutX="57.0" layoutY="34.0" prefHeight="38.0" prefWidth="150.0" promptText="username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="57.0" layoutY="92.0" prefHeight="38.0" prefWidth="150.0" promptText="password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="name" layoutX="56.0" layoutY="146.0" prefHeight="38.0" prefWidth="150.0" promptText="fullname">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="57.0" layoutY="200.0" prefHeight="38.0" prefWidth="150.0" promptText="email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone" layoutX="57.0" layoutY="254.0" prefHeight="38.0" prefWidth="150.0" promptText="phone">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bio" layoutX="57.0" layoutY="307.0" prefHeight="40.0" prefWidth="150.0" promptText="bio">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="22.0" layoutY="34.0" prefHeight="28.0" prefWidth="26.0" text="*" textFill="#e10909">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="85.0" prefHeight="28.0" prefWidth="26.0" text="*" textFill="#e10909">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="139.0" prefHeight="28.0" prefWidth="26.0" text="*" textFill="#e10909">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="193.0" prefHeight="28.0" prefWidth="26.0" text="*" textFill="#e10909">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePickre" layoutX="55.0" layoutY="367.0" onAction="#selectDate" prefHeight="32.0" prefWidth="150.0" promptText="bithday" />
+      <Button fx:id="signUpBtn" layoutX="55.0" layoutY="471.0" mnemonicParsing="false" onAction="#signUp" prefHeight="40.0" prefWidth="192.0" text="SIGN UP" textFill="#1c26ea">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="informationLabel" layoutX="57.0" layoutY="420.0" prefHeight="32.0" prefWidth="458.0" text="you must fill fields with star(*) mark ." textFill="#f20d0d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="525.0" layoutY="552.0" mnemonicParsing="false" onAction="#login" text="login" textFill="#6858e1" />
+      <Label layoutX="378.0" layoutY="557.0" text="back to login page" textFill="#2c14dc" />
+   </children>
+</AnchorPane>

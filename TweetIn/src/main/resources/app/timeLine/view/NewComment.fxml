@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.timeline.view.NewCommentPageController">
+   <children>
+      <TextField fx:id="lastTweetText" layoutX="103.0" layoutY="55.0" prefHeight="66.0" prefWidth="370.0" />
+      <ImageView fx:id="tweetPicture" fitHeight="66.0" fitWidth="82.0" layoutX="473.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="usernameLabel" layoutX="141.0" layoutY="25.0" prefHeight="21.0" prefWidth="99.0" text="username" />
+      <ImageView fx:id="userPicture" fitHeight="40.0" fitWidth="38.0" layoutX="103.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Button layoutX="7.0" layoutY="20.0" mnemonicParsing="false" onAction="#home" text="home" />
+      <Line endX="312.0" layoutX="277.0" layoutY="175.0" startX="-267.0" />
+      <TextField fx:id="textField" layoutX="100.0" layoutY="210.0" prefHeight="83.0" prefWidth="370.0" />
+      <Button layoutX="233.0" layoutY="423.0" mnemonicParsing="false" onAction="#chooseImage" prefHeight="40.0" prefWidth="125.0" text="choose Image" />
+      <Label layoutX="105.0" layoutY="182.0" text="write ypur Comment :" />
+      <ImageView fx:id="pictureView" fitHeight="111.0" fitWidth="144.0" layoutX="223.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="137.0" layoutY="479.0" mnemonicParsing="false" onAction="#createComment" prefHeight="31.0" prefWidth="316.0" text="create Comment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="textLabel" layoutX="264.0" layoutY="182.0" prefHeight="21.0" prefWidth="188.0" text="you must write somthing" textFill="#bf0404" />
+   </children>
+</AnchorPane>

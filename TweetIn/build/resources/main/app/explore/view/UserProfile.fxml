@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.explore.view.UserProfileController">
+   <children>
+      <ImageView fx:id="pictureView" fitHeight="118.0" fitWidth="153.0" layoutX="23.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="usernameLabell" layoutX="195.0" layoutY="14.0" prefHeight="37.0" prefWidth="153.0" text="Label" />
+      <Label fx:id="nameLabel" layoutX="195.0" layoutY="51.0" prefHeight="37.0" prefWidth="153.0" text="Label" />
+      <Label fx:id="birthdayLabel" layoutX="195.0" layoutY="88.0" prefHeight="37.0" prefWidth="153.0" text="Label" />
+      <TextArea fx:id="bioField" layoutX="362.0" layoutY="16.0" prefHeight="107.0" prefWidth="224.0" />
+      <ScrollPane layoutX="38.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="300.0" prefWidth="500.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="followBtn" layoutX="38.0" layoutY="206.0" mnemonicParsing="false" onAction="#followAction" text="follow" />
+      <Button fx:id="blockBtn" layoutX="135.0" layoutY="206.0" mnemonicParsing="false" onAction="#block" text="block" />
+      <Button fx:id="muteBtn" layoutX="233.0" layoutY="206.0" mnemonicParsing="false" onAction="#mute" text="mute" />
+      <Button fx:id="messageBtn" layoutX="323.0" layoutY="206.0" mnemonicParsing="false" onAction="#message" text="message" />
+      <Label fx:id="lastseenLabel" layoutX="195.0" layoutY="134.0" prefHeight="37.0" prefWidth="153.0" text="Label" />
+      <Button layoutX="542.0" layoutY="137.0" mnemonicParsing="false" onAction="#backk" text="back" />
+      <Button layoutX="538.0" layoutY="171.0" mnemonicParsing="false" onAction="#home" text="home" />
+   </children>
+</AnchorPane>

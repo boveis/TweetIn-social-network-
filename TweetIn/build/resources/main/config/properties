@@ -1,0 +1,29 @@
+#
+#Sun Aug 22 05:37:04 IRDT 2021
+BlockedAccountPage=/app/explore/view/BlockedAccountPage.fxml
+SettingPage=/app/setting/view/SettingPage.fxml
+SignUnPage=SignUnPage.fxml
+RequestPane=/app/announcement/view/RequestPane.fxml
+Message=/app/message/view/Message.fxml
+UserProfile=/app/explore/view/UserProfile.fxml
+GroupPage=/app/message/view/GroupPage.fxml
+CommentPage=/app/timeLine/view/CommentPage.fxml
+NewTweet=/app/timeLine/view/NewTweet.fxml
+NotExistUser=/app/explore/view/NotExistUser.fxml
+AnnouncementPage=/app/announcement/view/AnnouncementPage.fxml
+LoginPage=LoginPage.fxml
+MessagePlatform=/app/message/view/MessagePlatform.fxml
+TweetPane=/app/timeLine/view/TweetPane.fxml
+PersonalPage=/app/personal/view/PersonalPage.fxml
+Timeline=/app/timeLine/view/Timeline.fxml
+ExplorePage=/app/explore/view/ExplorePage.fxml
+NewComment=/app/timeLine/view/NewComment.fxml
+MyTweetPane=/app/personal/view/MyTweetPane.fxml
+MyMessagePane=/app/message/view/MyMessagePane.fxml
+ChooseReciever=/app/message/view/ChooseReciever.fxml
+OthersMessagePane=/app/message/view/OthersMessagePane.fxml
+invalidPass=invalid password!
+wrongPass=wrong password
+wrongUsername=username doesnt exist
+invalidUsername=invalid UserName!
+messageLabel=write name

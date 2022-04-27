@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.personal.view.PersonalPageController">
+   <children>
+      <Button layoutX="-9.0" layoutY="549.0" mnemonicParsing="false" onAction="#back" prefHeight="51.0" prefWidth="84.0" text="back" textFill="#140ebf" />
+      <Button layoutX="405.0" layoutY="549.0" mnemonicParsing="false" onAction="#message" prefHeight="51.0" prefWidth="84.0" text="Message" />
+      <Button layoutX="496.0" layoutY="549.0" mnemonicParsing="false" onAction="#setting" prefHeight="51.0" prefWidth="104.0" text="Setting" />
+      <Button layoutX="318.0" layoutY="549.0" mnemonicParsing="false" onAction="#explore" prefHeight="51.0" prefWidth="84.0" text="Explore" />
+      <Button layoutX="93.0" layoutY="549.0" mnemonicParsing="false" onAction="#announcement" prefHeight="51.0" prefWidth="115.0" text="Announcement">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="tweetScroll" layoutX="50.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0">
+         <content>
+            <VBox fx:id="tweetBox" prefHeight="350.0" prefWidth="500.0" />
+         </content></ScrollPane>
+      <Button layoutX="37.0" layoutY="115.0" mnemonicParsing="false" onAction="#newTweet" prefHeight="51.0" prefWidth="91.0" text="new tweet" />
+      <Button layoutX="215.0" layoutY="549.0" mnemonicParsing="false" onAction="#timeline" prefHeight="51.0" prefWidth="97.0" text="TimeLine" />
+      <Label layoutX="532.0" layoutY="52.0" prefHeight="31.0" prefWidth="64.0" text="follower" />
+      <Label layoutX="532.0" layoutY="10.0" prefHeight="31.0" prefWidth="64.0" text="following" />
+      <ImageView fx:id="pictureView" fitHeight="86.0" fitWidth="136.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="bioField" layoutX="157.0" layoutY="109.0" prefHeight="62.0" prefWidth="407.0" />
+      <Label fx:id="followingLabel" layoutX="325.0" layoutY="15.0" text="Label" />
+      <Label fx:id="followerLabel" layoutX="325.0" layoutY="57.0" text="Label" />
+      <Label fx:id="usernameLabel" layoutX="171.0" layoutY="15.0" prefHeight="21.0" prefWidth="74.0" text="Label" />
+      <Label fx:id="birthdayLabel" layoutX="171.0" layoutY="73.0" prefHeight="21.0" prefWidth="64.0" text="Label" />
+      <Label fx:id="nameLabel" layoutX="171.0" layoutY="47.0" prefHeight="21.0" prefWidth="64.0" text="Label" />
+      <ComboBox fx:id="follower" layoutX="372.0" layoutY="52.0" onAction="#seeFollower" prefWidth="150.0" />
+      <ComboBox fx:id="following" layoutX="372.0" layoutY="10.0" onAction="#seeFollowing" prefWidth="150.0" />
+   </children>
+</AnchorPane>
